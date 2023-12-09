@@ -1,0 +1,137 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* VARIABELS */
+:root {
+  --primary-color: #ffca2c;
+  --dark-color: #000000;
+  --light-color: #ffffff;
+  --gray-color: gray;
+
+  --h1-font-size: 40px;
+  --h2-font-size: 32px;
+  --small-font-size: 14px;
+}
+
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* GLOBAL CSS */
+section {
+  padding: 70px 0; //70px atas bawah 0 kiri kanan
+}
+
+section .section-title {
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-purple {
+  backround-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.text-purple {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.fs-7 {
+  font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/* CSS PER SECTION */
+/* Navbar */
+.navbar {
+  z-index: 1;
+}
+
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:active {
+  color: var(--primary-color);
+}
+
+.active {
+  color: #ffca2c !important;
+}
+
+/* Header */
+.header-section .header-title {
+  font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill {
+  color: var(--light-color);
+}
+
+.header-section .header-skill i {
+  transition: 0.3s;
+}
+
+.header-section .header-skill:hover i {
+  transform: rotate(90deg);
+}
+
+.header-section .header-img {
+  border-radius: 10px;
+  width: 80%;
+}
+
+/* Tentang Saya */
+.tentang-saya {
+  background-color: #ececf5;
+  top: 0;
+  left: 0;
+}
+
+.tentang-saya p {
+  font-size: 18px;
+}
+
+/* Portofolio Card */
+.portofolio .card {
+  transition: all 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.portofolio .card:hover {
+  transform: scale(1.15);
+  z-index: 1;
+  background-color: var(--primary-color);
+}
+
+/* Kontak */
+.kontak {
+  background-color: var(--primary-color);
+  top: 0;
+  left: 0;
+}
+
+.kontak .social-media {
+  text-decoration: none;
+  color: #000000;
+}
